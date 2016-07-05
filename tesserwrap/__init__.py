@@ -112,7 +112,6 @@ class Tesseract(object):
             Image to be OCR'd by tesseract.
         """
         self.set_image(image)
-        self.set_page_seg_mode(PageSegMode.PSM_SINGLE_BLOCK)
         return self.get_utf8_text()
 
     def get_rectangle(self):
